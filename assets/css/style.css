@@ -65,4 +65,124 @@ ol {
   list-style-type: none;
 }
 
+@font-face {
+  font-family: Manrope;
+  src: url(../font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+:root {
+  --font-family-headings: Manrope, sans-serif;
+  --font-family-text: sans-serif;
+  --font-size-body: 0.813rem;
+  --font-weight-heading-1: 500;
+  --font-weight-heading-2: 700;
+  --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --color-grayish-blue: hsl(212, 23%, 69%);
+  --color-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+}
+
+body {
+  background-color: var(--color-light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-body);
+}
+
+article {
+  background-color: white;
+  width: 375px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.article__content {
+  padding: 32px;
+}
+
+.article__heading {
+  color: var(--color-very-dark-grayish-blue);
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.article__text {
+  color: var(--color-desaturated-dark-blue);
+}
+
+.share__info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.share__info p {
+  font-size: 16px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  color: var(--color-grayish-blue);
+}
+
+.share__info img {
+  aspect-ratio: 1;
+  width: 24px;
+}
+
+.article__footer {
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+}
+
+.article__footer--share-active {
+  background-color: var(--color-very-dark-grayish-blue);
+}
+
+.article__footer__info {
+  display: flex;
+  display: none;
+  padding: 0 32px;
+  gap: 16px;
+}
+
+.article__footer__info img {
+  aspect-ratio: 1;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.share__button {
+  margin-left: auto;
+  border: none;
+  background-color: var(--color-light-grayish-blue);
+  aspect-ratio: 1/1;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.share__button--active {
+  background-color: var(--color-desaturated-dark-blue);
+}
+
+.share__button--active img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+.article__author {
+  font-weight: var(--font-weight-heading-2);
+  color: var(--color-desaturated-dark-blue);
+}
+
+.article__date {
+  color: var(--color-desaturated-dark-blue);
+}
+
 /*# sourceMappingURL=style.css.map */

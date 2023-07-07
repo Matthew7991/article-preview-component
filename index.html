@@ -3,50 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script defer src="./assets/js/main.js"></script>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
-		<title>Frontend Mentor | Article preview component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<main>
 			<section>
 				<article>
 					<img src="./assets/img/drawers.jpg" alt="" />
-					<h2>
-						Shift the overall look and feel by adding these wonderful touches to
-						furniture in your home
-					</h2>
-					<p>
-						Ever been in a room and felt like something was missing? Perhaps it
-						felt slightly bare and uninviting. I’ve got some simple tips to help
-						you make any room feel complete.
-					</p>
-					<div class="article__footer">
+					<div class="article__content">
+						<h2 class="article__heading">
+							Shift the overall look and feel by adding these wonderful touches
+							to furniture in your home
+						</h2>
+						<p class="article__text">
+							Ever been in a room and felt like something was missing? Perhaps
+							it felt slightly bare and uninviting. I’ve got some simple tips to
+							help you make any room feel complete.
+						</p>
+					</div>
+					<div class="article__footer article__footer--share-active">
 						<div class="article__footer__info">
 							<img
 								src="./assets/img/avatar-michelle.jpg"
 								alt="Michelle Appleton a young brunette women"
 							/>
-							<p class="article__author">Michelle Appleton</p>
-							<p class="article__date">28 Jun 2020</p>
+							<div>
+								<p class="article__author">Michelle Appleton</p>
+								<p class="article__date">28 Jun 2020</p>
+							</div>
 						</div>
 						<div class="share__info">
 							<p>SHARE</p>
@@ -54,7 +45,7 @@
 							<img src="./assets/img/icon-twitter.svg" alt="twitter" />
 							<img src="./assets/img/icon-pinterest.svg" alt="pinterest" />
 						</div>
-						<button class="share__button">
+						<button class="share__button share__button--active">
 							<img src="./assets/img/icon-share.svg" alt="share" />
 						</button>
 					</div>
